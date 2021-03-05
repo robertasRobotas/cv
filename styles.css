@@ -5,10 +5,11 @@ body {
 
 .container {
   overflow: auto;
-  width: 80%;
+  width: 60%;
   height: 100vh;
   margin: auto;
   border: solid 2px;
+  min-width: 300px;
 }
 
 .userName {
@@ -43,4 +44,16 @@ body {
   font-size: 15px;
   font-family: 'Helvetica Neue';
   font-weight: 500;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 85%;
+  }
 }
